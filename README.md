@@ -4,12 +4,13 @@
 ##Overview
 This Java program demonstrates how to perform a controlled SQL injection test on a sample web application login form using Selenium WebDriver. The test is conducted on the OWASP Juice Shop, a safe environment designed for security testing.
 
-Prerequisites
+#Prerequisites
 Java Development Kit (JDK) installed
 Selenium WebDriver (Java bindings)
 ChromeDriver (Ensure the path to ChromeDriver is set correctly)
 Chrome browser installed
-Approach
+
+#Approach
 Launching the Web Browser: The program uses Selenium WebDriver to open a Chrome browser and navigate to the OWASP Juice Shop login page.
 Locating Elements: The username and password fields are located using the By.id locator method.
 Crafting the SQL Injection Payload: A simple SQL injection payload (' OR '1'='1) is entered into the username field.
